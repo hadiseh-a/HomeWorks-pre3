@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(205, 213, 228) !important;
+}
+.hover-color:hover {
+  color: red !important;
+}
+@media (max-width: 800px) {
+  .hide {
+    display: none !important;
+  }
+  .delet-margin{
+    margin: 0 !important;
+  }
+}
+@media (min-width: 768px) {
+  .span-hide {
+    display: none;
+  }
+  #navbar{
+    position: sticky;
+    left: 0;
+  }
+}
