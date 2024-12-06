@@ -1,5 +1,10 @@
-import isTruthyOrFalsy from "./0-isTruthyOrFalsy";
+const isTruthyOrFalsy = require("./0-isTruthyOrFalsy");
 
-test("truthy or falsy",()=>{
-    expect(isTruthyOrFalsy(false)).toBeFalsy();
-})
+describe("testing truthy or falsy", () => {
+  test("test truthy values", () => {
+    expect(isTruthyOrFalsy(true)).toBeTruthy();
+  });
+  test("test falsy values", () => {
+    expect(isTruthyOrFalsy("")).toBeFalsy();
+  });
+});
